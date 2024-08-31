@@ -13,6 +13,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BookPublisher {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
     @NotNull
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "book_id")
