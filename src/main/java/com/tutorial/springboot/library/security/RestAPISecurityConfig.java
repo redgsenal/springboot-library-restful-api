@@ -25,6 +25,7 @@ public class RestAPISecurityConfig {
         http.authorizeHttpRequests(configure ->
                 configure
                         .requestMatchers(HttpMethod.GET, apiPath.concat("/books")).permitAll()
+                        .requestMatchers(HttpMethod.POST, apiPath.concat("/author/{authorId}/publisher/{publisherId}/book")).permitAll()
                         .requestMatchers(HttpMethod.POST, apiPath.concat("/books")).denyAll()
         );
 
