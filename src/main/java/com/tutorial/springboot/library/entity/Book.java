@@ -1,7 +1,6 @@
 package com.tutorial.springboot.library.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +10,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name="book")
+@Table(name = "book")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
