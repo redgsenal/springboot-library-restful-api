@@ -33,10 +33,7 @@ public class Book {
     @Column(name = "published_date")
     private LocalDateTime publishedDate;
 
-    @NotNull
     @CreationTimestamp
     @Column(name = "create_at", nullable = false)
     private LocalDateTime createAt;
-
-
 }
